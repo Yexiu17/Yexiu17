@@ -1,0 +1,1512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&dipaly=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: linear-gradient( rgba(2, 2, 2, 0.6), rgba(0, 0, 0, 0.6)), url(Picture/back.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+    background-size:cover;
+    background-attachment: fixed;
+    animation: transitionIn 3s;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        background-color: #000;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* SCroll Bar */
+::-webkit-scrollbar{
+    width: 7px;
+    background: linear-gradient( rgba(1, 15, 1, 0.5), rgba(1, 15, 1, 0.5)), url(Picture/back.gif);
+}
+::-webkit-scrollbar-thumb{
+    background: #00ffff;
+    border-radius: 6px;
+}
+
+.go-top-btn {
+    position: fixed;
+    bottom: 35px;
+    right: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border: 1px solid #00ffff;;
+    display: none;
+    background: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .go-top-btn i{
+    font-size: 30px;
+    color: white;
+  }
+
+  .go-top-btn i:hover{
+    color: #010f01;
+  }
+
+  .go-top-btn:hover{
+    background: #00ffff;
+    border: none;
+    box-shadow: 0 0 10px #00ffff;
+  }
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 1000;
+}
+header.sticky{
+    background:  #1798b8;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+header img{
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    margin-top: 0.3%;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 26%;
+}
+header ul li{
+    list-style: none;
+    margin: 10px;
+    font-size: 20px;
+    
+}
+
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+header ul li a:hover{
+    background: #00ffff;
+    color: #010f01;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+header .action .searchBx i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+}
+
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+/* Home Banner*/
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+    margin-left: 10%;
+}
+.banner .bg .content h2{
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+.banner .bg .content p{
+    font-size: 1em;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #00ffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.banner .bg .content a:hover{
+    background: #00ffff;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.banner .bg img{
+    width: 800px;
+    
+}
+
+
+/* about */
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+}
+.about img{
+    height: 500px;
+    width: 500px;
+    margin-left: 80px;
+    
+}
+.about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+.about .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+}
+.about .contentBx p{
+    max-width: 700px;
+    text-align: justify;
+    color: #dbd9d9;
+}
+.about .contentBx .read-more-btn{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.about .contentBx .read-more-btn:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+.read-more-text{
+    display: none;
+}
+.read-more-text--show{
+    display: inline;
+}
+
+/* games */
+.games{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+.games h2{
+    color: #fff;
+    margin: 10px 0;
+}
+.games ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.games ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+.games ul li.active{
+    background: #1aef2c;
+    color: #010f01;
+    box-shadow:  0 0 10px #1aef2c;
+}
+.games .cardBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.games .cardBx .card{
+    width: 280px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #1b4121;
+    overflow: hidden;
+    box-shadow: 0 0 15px #1b4121;
+    
+}
+.games .cardBx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.games .cardBx .card .content{
+    padding: 10px;
+}
+.games .cardBx .card .content h4{
+    color: #fff;
+    margin: 15px 0;
+}
+.games .cardBx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    background: #357e45;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.games .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #1aef2c;
+    box-shadow: 0 0 10px #1aef2c;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+@keyframes animate{
+    100%{
+        transform: scale(1);
+    }
+}
+.games .cardBx .card .info{
+    border-top:  2px solid #357e45;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.games .cardBx .card .info p{
+    font-size: 1em;
+    color: #fff;
+}
+.games .cardBx .card .info p span{
+    color: #1aef2c;
+}
+.games .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.games .cardBx .card .info a:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+.games .cardBx .card.hide{
+    display: none;
+
+}
+
+/* gameplays */
+.gameplays{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100hv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameplays h2{
+    color: #fff;
+    margin: 10px 0;
+}
+.gameplays .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gameplays .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #1b4121;
+    overflow: hidden;
+    box-shadow: 0 0 15px #1b4121;
+}
+.gameplays .boxBx .box video{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.gameplays .boxBx .box .content{
+    padding: 10px;
+}
+.gameplays .boxBx .box .content h4{
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+.gameplays .boxBx .box .content p{
+    text-align: justify;
+    color: #dbd9d9;
+    margin-top: 10px;
+}
+.gameplays .boxBx .box .content .btn{
+    display: flex;
+    justify-content: space-between;
+}
+.gameplays .boxBx .box .content .watch{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #010f01;
+    letter-spacing: 1px;
+    box-shadow:  0 0 10px #1aef2c;
+}
+.gameplays .boxBx .box .content .watch:hover{
+    border: 1px solid #1aef2c;
+    background: none;
+    color: #fff;
+    box-shadow: none;
+}
+.gameplays .boxBx .box .content .Download{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.gameplays .boxBx .box .content .Download:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+
+/* contact */
+.contact{
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact #im1{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    filter:invert(1);
+    box-shadow: 0 0 5px #1b4121;
+}
+.contact form{
+    width: 50%;
+    margin:  30px;
+}
+.contact form h1{
+    color: #fff;
+}
+.contact form img{
+    width: 350px;
+    height: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    background-color: 2px solid #1aef2c;
+    box-shadow: 0 0 20px #1aef2c;
+}
+.contact form .inputBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    padding-left: 30px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.contact form .inputBx a:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+/*Footer*/
+footer{
+    padding: 10px 100px;
+}
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .info img{
+    position: relative;
+    position: relative;
+    width: 325px;
+    height: 50px;
+}
+footer .info p{
+    color: #dbd9d9;
+}
+footer .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aef2c;
+}
+footer .info ul li:hover{
+    background: #1aef2c;
+    border: none;
+    box-shadow: 0 0 10px #1aef2c;
+}
+footer .info ul li a i{
+    font-size: 2em;
+    color: #fff;
+}
+footer .info ul li:hover a i{
+    color: #010f01;
+}
+
+
+/* Scrolling Animation */
+.animeX{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Responsive NavBar*/
+@media (max-width: 991px){
+    header{
+        padding: 15px 40px;
+    }
+    header .nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(27, 65, 29, 0.9);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1000;
+    }
+    header .nav.active{
+        display: flex;
+    }
+    header .nav li{
+        margin: 10px 0;
+    }
+    header .nav li a{
+        font-size: 15px;
+        margin: 10px 0;
+    }
+    header .nav li i{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .toggleMenu{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background: url(Picture/menu.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 1001;
+    }
+    .toggleMenu.active{
+        background: url(Picture/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+    .banner .bg img{
+        position: absolute;
+    }
+    .banner .bg .content{
+        width: 100%;
+        height: 100%;
+        background: rgba(27, 65, 35, 0.5);
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx{
+        width: 100%;
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact #im1{
+        height: 100%;
+        width: 100%;
+    }
+    
+    .contact .form{
+        width: 100%;
+        margin: 30px;
+        padding: 10px;
+    }
+    .contact .form h1{
+        text-align: center;
+    }
+    footer .info{
+        flex-direction: column;
+    }
+    .LogFoot .info{
+        flex-direction: column;
+    }
+    .LogHead img{
+        height: 100%;
+        width: 100%;
+    }
+    .logBox{
+        flex-direction: column;
+    }
+    .RegFoot .info{
+        flex-direction: column;
+    }
+    .RegHead img{
+        height: 100%;
+        width: 100%;
+    }
+    .RegBox{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/*login*/
+.LogHead{
+    margin-top: 40px;
+    padding: 0px;
+}
+.img1{
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    left: 0;
+    margin-left: 100px;
+}
+.img2{
+    position: absolute;
+    height: 500px;
+    width: 350px;
+    right: 0;
+    margin-right: 100px;
+}
+.logBox{
+    margin-top: 40px;
+    display: block;
+    width: 380px;
+    height: 420px;
+    background: #1c1c1c;
+    border-radius:8px;
+    overflow: hidden;
+    position: relative;
+}
+.logBox::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #1aef2c, #1aef2c);
+    animation: animate12 6s linear infinite;
+}
+.logBox::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #1aef2c, #1aef2c);
+    animation: animate12 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate12{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.logBox form{
+    position: absolute;
+    inset: 4px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    overflow: hidden;
+}
+.logBox form .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #8f8f8f;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+.logBox form .close-btn:hover{
+    color: #1aef2c;
+    font-size: 20px;
+}
+.logBox form h2{
+    color: #1aef2c;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.logBox form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 40px;
+}
+.logBox form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.logBox form .inputBox span{
+    position:absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.05em;
+}
+.logBox form .inputBox input:valid~span,
+.logBox form .inputBox input:focus~span{
+    color: #1aef2c;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.logBox form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #1aef2c;
+    border-radius: 4px;
+    transition: o.5s;
+    pointer-events: none;
+    z-index: 9;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.logBox form .inputBox input:valid~i,
+.logBox form .inputBox input:focus~i{
+    height: 44px;
+}
+.logBox form .links{
+    text-align: center;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    margin-top: 10px;
+}
+.logBox form .links a{
+    margin: 10px 0;
+    font-size: 12px;
+    color: #d1cfcf;
+}
+.logBox form .links a:hover{
+    color: #1aef2c;
+    font-size: 15px;
+}
+.logBox form input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    margin-top: 40px;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: none;
+}
+.logBox form input[type="submit"]:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+/*LogFoot*/
+.LogFoot{
+    padding: 10px 100px;
+    margin-top: 75px;
+}
+.LogFoot .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.LogFoot .info img{
+    position: relative;
+    position: relative;
+    width: 325px;
+    height: 50px;
+}
+.LogFoot .info p{
+    color: #dbd9d9;
+}
+.LogFoot .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LogFoot .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aef2c;
+}
+.LogFoot .info ul li:hover{
+    background: #1aef2c;
+    border: none;
+    box-shadow: 0 0 10px #1aef2c;
+}
+.LogFoot .info ul li a i{
+    font-size: 2em;
+    color: #fff;
+}
+.LogFoot .info ul li:hover a i{
+    color: #010f01;
+}
+
+
+/*Register*/
+.RegHead{
+    margin-top: 40px;
+    padding: 0px;
+}
+.RegBox{
+    margin-top: 40px;
+    display: block;
+    width: 380px;
+    height: 600px;
+    background: #1c1c1c;
+    border-radius:8px;
+    overflow: hidden;
+    position: relative;
+}
+.RegBox::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 600px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #1aef2c, #1aef2c);
+    animation: animate12 6s linear infinite;
+}
+.RegBox::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 600px;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, #1aef2c, #1aef2c);
+    animation: animate12 6s linear infinite;
+    animation-delay: -3s;
+}
+.RegBox form{
+    position: absolute;
+    inset: 4px;
+    border-radius: 8px;
+    background: #28292d;
+    z-index: 10;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    overflow: hidden;
+}
+.RegBox form .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #8f8f8f;
+    text-decoration: none;
+    background: none;
+    border: none;
+}
+.RegBox form .close-btn:hover{
+    color: #1aef2c;
+    font-size: 20px;
+}
+.RegBox form h2{
+    color: #1aef2c;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.RegBox form .inputBox{
+    position: relative;
+    width: 300px;
+    margin-top: 40px;
+}
+.RegBox form .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+.RegBox form .inputBox span{
+    position:absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.05em;
+}
+.RegBox form .inputBox input:valid~span,
+.RegBox form .inputBox input:focus~span{
+    color: #1aef2c;
+    transform: translateX(0px) translateY(-34px);
+    font-size: 0.75em;
+}
+.RegBox form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background: #1aef2c;
+    border-radius: 4px;
+    transition: o.5s;
+    pointer-events: none;
+    z-index: 9;
+    transform: scale(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+.RegBox form .inputBox input:valid~i,
+.RegBox form .inputBox input:focus~i{
+    height: 44px;
+}
+.RegBox form .links{
+    text-align: center;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    margin-top: 10px;
+}
+.RegBox form .links a{
+    margin: 10px 0;
+    font-size: 12px;
+    color: #d1cfcf;
+}
+.RegBox form .links a:hover{
+    color: #1aef2c;
+    font-size: 15px;
+}
+.RegBox form input[type="submit"]{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    margin-top: 40px;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: none;
+}
+.RegBox form input[type="submit"]:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+/*LogFoot*/
+.RegFoot{
+    padding: 10px 100px;
+    margin-top: 75px;
+}
+.RegFoot .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.RegFoot .info img{
+    position: relative;
+    position: relative;
+    width: 325px;
+    height: 50px;
+}
+.RegFoot .info p{
+    color: #dbd9d9;
+}
+.RegFoot .info ul{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RegFoot .info ul li{
+    list-style: none;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #1aef2c;
+}
+.RegFoot .info ul li:hover{
+    background: #1aef2c;
+    border: none;
+    box-shadow: 0 0 10px #1aef2c;
+}
+.RegFoot .info ul li a i{
+    font-size: 2em;
+    color: #fff;
+}
+.RegFoot .info ul li:hover a i{
+    color: #010f01;
+}
+
+
+
+
+
+
+
+
+
+
+/* HeadVid */
+.aboutg .HeadVid{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100hv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.aboutg .HeadVid .video{
+    width:1000px;
+    margin-top: 130px;
+    overflow: hidden;
+    padding: 6px;
+    border: 1px solid #fff;
+    box-shadow:  0 0 15px #ffffff;
+}
+
+
+
+
+/* about games */
+.aboutg{
+    position:relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content: center;
+}
+.aboutg .contentBx{
+    width: 50%;
+    margin: 20px;
+    margin-top: 50px;
+}
+.aboutg .contentBx h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.aboutg .contentBx p{
+    width: 100%p;
+    text-align:justify;
+    color: #dbd9d9;
+    font-size: 25px;
+}
+.aboutg .contentBx .read-more-b{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.aboutg .contentBx .read-more-b:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+
+.read-more-t{
+    display: none;
+}
+.read-more-t--show{
+    display:inline;
+}
+
+
+
+
+
+
+/* picture of game */
+.picture{
+    margin-top: 2in;
+}
+.picture h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.con input{
+    display: none;
+}
+
+.con{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.cards{
+    position: relative;
+    height: 650px;
+    width: 530px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.cards label{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.55s ease;
+}
+.cards .card{
+    position: relative;
+    height: 100%;
+    background-color: #1b4121;
+    box-shadow: 0 0 10px #1b4121;
+    border-radius: 10px;
+}
+.cards .image{
+    display: flex;
+    justify-content: space-between;
+}
+.cards .image img{
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 90%);
+    margin: 15px;
+    width: 500px;
+    height: 330px;
+    object-fit: cover;
+    transition: all .7s;
+}
+.cards .image img:hover{
+    transform: scale(1.05);
+}
+#s1:checked~.cards #slide4,
+#s2:checked~.cards #slide5,
+#s3:checked~.cards #slide1,
+#s4:checked~.cards #slide2,
+#s5:checked~.cards #slide3{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 60%);
+    transform: translate3d(-70%, 0, -220px);
+}
+#s1:checked~.cards #slide5,
+#s2:checked~.cards #slide1,
+#s3:checked~.cards #slide2,
+#s4:checked~.cards #slide3,
+#s5:checked~.cards #slide4{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 60%);
+    transform: translate3d(-35%, 0, -120px);
+}
+#s1:checked~.cards #slide1,
+#s2:checked~.cards #slide2,
+#s3:checked~.cards #slide3,
+#s4:checked~.cards #slide4,
+#s5:checked~.cards #slide5{
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 65%);
+    transform: translate3d(0, 0, 0);
+}
+#s1:checked~.cards #slide2,
+#s2:checked~.cards #slide3,
+#s3:checked~.cards #slide4,
+#s4:checked~.cards #slide5,
+#s5:checked~.cards #slide1{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 60%);
+    transform: translate3d(35%, 0, -120px);
+}
+#s1:checked~.cards #slide3,
+#s2:checked~.cards #slide4,
+#s3:checked~.cards #slide5,
+#s4:checked~.cards #slide1,
+#s5:checked~.cards #slide2{
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 60%);
+    transform: translate3d(70%, 0, -220px);
+}
+
+
+
+
+
+
+/* gameplays of game */
+.gameplaysg{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100hv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.gameplaysg h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.gameplaysg .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.gameplaysg .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #1b4121;
+    overflow: hidden;
+    box-shadow: 0 0 15px #1b4121;
+}
+.gameplaysg .boxBx .box video{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.gameplaysg .boxBx .box .content{
+    padding: 10px;
+}
+.gameplaysg .boxBx .box .content h4{
+    color: #fff;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+.gameplaysg .boxBx .box .content p{
+    text-align: justify;
+    color: #dbd9d9;
+    margin-top: 10px;
+}
+.gameplaysg .boxBx .box .content .btn{
+    display: flex;
+}
+
+.gameplaysg .boxBx .box .content .btn .Watch{
+    display: block;
+    padding: 10px 90px;
+    margin: 20px;
+    margin-left: 47px;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.gameplaysg .boxBx .box .content .btn .Watch:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+
+/* Download game */
+.download{
+    padding: 20px 100px;
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.download form h1{
+    color: #fff;
+}
+
+.download form .inputBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    padding-left: 30px;
+    outline: none;
+    background: transparent;
+    border: 1px solid #1aef2c;
+    text-decoration: none;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.download form .inputBx a:hover{
+    background: #1aef2c;
+    border: none;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+}
+
+/* Search*/
+ .action{
+    max-width: 450px;
+    margin: 0;
+  }
+  
+  .action .searchBx{
+    background: #fff;
+    width: 250px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+  }
+  
+  .searchBx input{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 60px 0 20px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+  }
+  
+  .searchBx.active input{
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .searchBx .autocom-box{
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+  }
+  
+  .searchBx.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    position: absolute;
+    background-color: #fff;
+    width: 282px;
+    border-radius: 5px;
+  }
+  
+  .autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px;
+  }
+  
+  .searchBx.active .autocom-box li{
+    display: block;
+  }
+  .autocom-box li:hover{
+    background: #1aef2c;
+    color: #010f01;
+    box-shadow: 0 0 10px #1aef2c;
+  }
+  
+  .searchBx #btn{
+    position: absolute;
+    right: 0px;
+    padding-top: 6px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 20px;
+    color: #1aef2c;
+    cursor: pointer;
+  }

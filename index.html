@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groove</title>
+    <link rel="icon" type="png" href="Picture/LOGO1.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+
+    <!-- Scroll top-->
+    <button class="go-top-btn">
+        <i class='bx bx-arrow-to-top'></i>
+      </button>
+
+
+<!-- Header-->
+    <header>
+        <img src="Picture/LOGO.png">
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#games">Music</a></li>
+            <li><a href="#gameplay">Trending</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">LOGIN</a></li>
+            
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <input type="text" id="tser" placeholder="Search Games">
+                <a href="#"><i id="btn" class=' bx bx-search' style="color: #00ffff;"></i></a>
+                <div class="autocom-box">
+                
+                </div>
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+<!-- Home Banner-->
+    <div class="banner" id="home">
+        <div class="bg">
+            <div class="content">
+                <h2>GOOD MUSIC GOOD FRIENDS<br>GOOD VIBES</h2>
+                <p>The power of music, can change everything</p>
+                <a href="login.html" target="_blank" class="btn">LOGIN</a>
+            </div>
+            <img src="Picture/front.png">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--Games-->
+    <div class="games animeX" id="games">
+        <h2>Popular Games</h2>
+        <ul>
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="pc">Pc Games</li>
+            <li class="list" data-filter="mobile">Mobile Games</li>
+        </ul>
+        <div class="cardBx">
+            <div class="card" data-item="pc">
+                <img src="Picture/g1.jpeg">
+                <div class="content">
+                    <h4>Defense of the Ancients</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="Dota.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Picture/g2.jpeg">
+                <div class="content">
+                    <h4>Valorant</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="Val.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="mobile">
+                <img src="Picture/g9.jpeg">
+                <div class="content">
+                    <h4>Mobile Legend</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="ML.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Picture/g3.jpg">
+                <div class="content">
+                    <h4>Horizon Zero Dawn</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="HZD.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="mobile">
+                <img src="Picture/g10.jpeg">
+                <div class="content">
+                    <h4>Call of Duty Mobile</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="COD.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Picture/g4.jpg">
+                <div class="content">
+                    <h4>God of War Ragnarok</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="GOW.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-item="pc">
+                <img src="Picture/g5.jpg">
+                <div class="content">
+                    <h4>Halo Infinite</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="HI.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Picture/g6.jpg">
+                <div class="content">
+                    <h4>Red Dead Redemption II</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="RDD.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Picture/g7.jpg">
+                <div class="content">
+                    <h4>Elden Ring</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="ER.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="mobile">
+                <img src="Picture/g11.jpeg">
+                <div class="content">
+                    <h4>Clash of Clans</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="COC.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="pc">
+                <img src="Picture/g8.jpg">
+                <div class="content">
+                    <h4>Phasmophobia</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="P.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card" data-item="mobile">
+                <img src="Picture/g12.jpeg">
+                <div class="content">
+                    <h4>Apex Legends Mobile</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="ALM.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="mobile">
+                <img src="Picture/g13.png">
+                <div class="content">
+                    <h4>Angry Birds 2</h4>
+                    <div class="progress-line"><span></span></div>
+                    <div class="info">
+                        <p>Free to<br><span>PLAY</span></p>
+                        <a href="AB.html" target="_blank" >Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--Gameplays-->
+    <div class="gameplays animeX" id="gameplay">
+        <h2>Gameplays</h2>
+        <div class="boxBx">
+            <div class="box">
+                <video class="video" src="Video/v1.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()" > </video>
+                <div class="content">
+                    <h4>Topson Sniper Assassin - Dota 2 Pro Gameplay</h4>
+                    <p>Top MMR Plays / Dota 2 Pro Gameplay is Educational Channel about e-sport Dota 2 competitive scene.
+                        Watch replays of professional players, highest...    
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=XyRHMqoIylY&t=17s" target="_blank" class="watch">Watch</a>
+                        <a href="Dota.html" target="_blank" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v2.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()" > </video>
+                <div class="content">
+                    <h4>LAYLA MISS HIKARI NEW BUILD TO GET 50 KILLS AND UNLIMITED SAVAGE!!</h4>
+                    <p>Queen of Marksman.  In Mobile Legends, you mignht know the hoer Layla. She's known for her basic attack range over turrents and can...</p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=ZJKkfsogcEk&t=7s" target="_blank" class="watch">Watch</a>
+                        <a href="ML.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v3.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()"> </video>
+                <div class="content">
+                    <h4>Horizon Zero Dawn - Epic High Action Combat & Free Roam Gameplay</h4>
+                    <p>Thought I would do a video on one of my favorite PS4 games and probably one of 
+                        my favorite of this past generation. Hope you enjoy the gameplay in 4K on...
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=yKLwbkbWQpc&t=6s" target="_blank" class="watch">Watch</a>
+                        <a href="HZD.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v4.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()"></video>
+                <div class="content">
+                    <h4>Call of Duty Mobile  Legendary ranked full gameplay</h4>
+                    <p>Welcome to my channel ! i am the main sniper for Divinity Uprising. I reached Rank #1 in Garena in s1,s2 & s3 and is the 2 times national champion of...
+                        </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=bjEl7afwfGQ&t=10s" target="_blank" class="watch">Watch</a>
+                        <a href="COD.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v5.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()"></video>
+                <div class="content">
+                    <h4>God of War - EASY vs. God of War Difficulty</h4>
+                    <p>Games Physics, NPC AI, Logics, Graphics, Details, Bugs, Glitches, Facts, MOD, Weapon, Experiments, Comparisons and Showcase.
+
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=keMBelR_Tac&t=10s" target="_blank" class="watch">Watch</a>
+                        <a href="GOW.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v6.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()"></video>
+                <div class="content">
+                    <h4>MVP! TENZ JETT RANKED VALORANT GAMEPLAY.</h4>
+                    <p>If you want the removal of videos that you own the copyright, which can be accessed via this page, please contact me ValorantINSANEDaily@gmail.com
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=4AUZc2QcyFo&t=9s" target="_blank" class="watch">Watch</a>
+                        <a href="Val.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v7.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()"></video>
+                <div class="content">
+                    <h4>There's a NEW 'KING' of Clash of Clans Attacks!</h4>
+                    <p>Don't forget to check out the Clash of Clans 'strange but true' series - some of the oddest, rarest things in Clash of Clans- 
+                        and more than a...
+                        </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=-aRsTcIHSRs&t=16s" target="_blank" class="watch">Watch</a>
+                        <a href="COC.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/v8.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()"></video>
+                <div class="content">
+                    <h4>Mirage Cool Gameplay 😎 Apex Legends Mobile</h4>
+                    <p>Thanks for watching !! Like and Subscribe for more video of Apex Legends Mobile. 
+                         Instagram: arsalan_abid_ns
+                         Twitter: ArsalanAbid16
+                         Facebook: ArsalanAbid16
+
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=556y_0LLnXI&t=7s" target="_blank" class="watch">Watch</a>
+                        <a href="ALM.html" target="_blank" class="Download">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!--About--> 
+    <div class="about animeX" id="about">
+        <div class="contentBx">
+            <h2>About Us</h2>
+            <p>We strive to bring joy to worldwide through memorable, beautiful, fun games. Our games seek to capture the imaginations of all types of people, as our goal is to build games and communities that include experienced gamers, new gamers, solo gamers, partners, larger groups, people of all ethnicities, genders, creeds, cultures, nations, sexualities, abilities, and ages. Through various content we try to add value to our fellow creators in a way that extends beyond board games by sharing our entrepreneurial successes, mistakes, and insights, as well as our love for a wide variety of games. We also believe in constantly evaluating and improving our creation process to improve the environmental sustainability and accessibility of our games.
+                <br>
+                <span class="read-more-text">
+                    <br> Game Street is a game Website run by Dave Curaza Sarinas with the support of co-founder Diethere Sarinas, Director of Communications Dave Curaza Sarinas, Director of Sales & Logistics Dave Curaza Sarianas, and a myriad of talented independent contractors, volunteers, and fans. Game Street's games include DOTA 2, Valorant, Mobile Legend BangBang, Hirzon Zero Dawn,  Call of Duty, God Of War, Halo Infinite, and etc..
+                </span>
+            </p>
+            <span class="read-more-btn">Read More</span>
+            
+        </div>
+        <img src="Picture/LOGO1.png">
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<!--Contact-->
+    <div class="contact animeX" id="contact">
+        <img id="im1" src="Picture/contact.jpg">
+        <form method="post">
+            <center><h1>Contact Us</h1>
+            <img src="Picture/profile.jpeg">
+            <div class="inputBx">
+                <a href="mailto:dvsarinas28@gmail.com">Send Email</a>
+            </div></center>
+        </form>
+    </div>
+
+
+
+<!--Footer-->
+    <footer>
+        <div class="info">
+             <img src="Picture/LOGO.png">
+            <p><i class='bx bx-copyright' ></i>2022 All Reserved</p>
+            <ul>
+                <li><a href="https://www.facebook.com/dave.sarinas" target="_blank"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://www.instagram.com/avid2_8/" target="_blank"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://twitter.com/Dave_S28" target="_blank"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
