@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Street</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="png" href="Picture/LOGO1.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <embed src="HZD.mp3" loop="true" autostart="true" width="2" height="0">
+</head>
+<body>
+    <!--Header-->
+    <div class="RegHead">
+        <center><img src="Picture/LOGO.png"></center>
+   </div>
+  
+    <img class="img1" src="Picture/h2.png">
+    <img class="img2" src="Picture/h3.png">
+
+    <!--Login-->
+  <center><div class="RegBox">
+    <form action="connect.php" method="post">
+        <button onclick="closeMe()" class="close-btn bx bx-x"></button>
+      <h2>SIGN IN NOW</h2>
+      <div class="inputBox">
+        <input type="text" name="name" required="required">
+        <span>Username</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="email" name="email" required="required">
+        <span>Email</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" name="password" required="required">
+        <span>Password</span>
+        <i></i>
+      </div>
+      <div class="inputBox">
+        <input type="password" name="cpassword" required="required">
+        <span>Confirm Password</span>
+        <i></i>
+      </div>
+      <input type="submit" name="submit" value="SIGN IN">
+      <div class="links">I'm already a member<a href="login.html">Login Now</a></div>
+    </form>
+  </div>
+    </center>
+
+  <!--Footer-->
+  <div class="RegFoot">
+        <div class="info">
+            <img src="Picture/LOGO.png">
+            <p><i class='bx bx-copyright' ></i>2022 All Reserved</p>
+            <ul>
+                <li><a href="https://www.facebook.com/dave.sarinas" target="_blank"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://www.instagram.com/avid2_8/" target="_blank"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="https://twitter.com/Dave_S28" target="_blank"><i class='bx bxl-twitter' ></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Street</title>
+    <link rel="icon" type="png" href="Picture/LOGO1.png">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+         <!-- Scroll top-->
+         <button class="go-top-btn">
+            <i class='bx bx-arrow-to-top'></i>
+          </button>
+
+          
+    <!--Header-->
+    <header>
+        <img src="Picture/LOGO.png">
+        <ul class="nav">
+            <li><a href="index.html" onclick="closeMe()" >Home</a></li>
+            <li><a href="#about">Information</a></li>
+            <li><a href="#picture">Pictures</a></li>
+            <li><a href="#gameplay">Plays</a></li>
+            <li><a href="#download">Download</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Join Now</a>
+                    <div class="drop">
+                        <a href="login.html" target="_blank">Login</a>
+                        <a href="register.html" target="_blank">Sign in</a>
+                    </div>
+            </li> 
+        </ul>
+        <div class="action">
+            <div class="searchBx">
+                <input type="text" id="tser" placeholder="Search Games">
+                <a href="#"><i id="btn" class=' bx bx-search'></i></a>
+                <div class="autocom-box">
+                
+                </div>
+            </div>
+        </div>
+        <div class="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+
+    
+
+    <!--About-->
+    <div class="aboutg" id="about">
+        <div class="HeadVid">
+        <video class="video" id="video" src="Video/main/dm.mp4" autoplay muted controls loop >
+        </video>
+    </div>
+        <div class="contentBx">
+            <center><h2>"Defense of the Ancients" <br>(DOTA)</h2>
+            <p>Dota 2 is a 2013 multiplayer online battle arena (MOBA) video game by Valve. The game is a sequel
+                 to Defense of the Ancients (DotA), a community-created mod for Blizzard Entertainment's Warcraft III:
+                  Reign of Chaos. Dota 2 is played in matches between two teams of five players, with each team occupying
+                   and defending their own separate base on the map. Each of the ten players independently controls a
+                    powerful character known as a "hero" that all have unique abilities and differing styles of play. 
+                    During a match players collect experience points and items for their heroes to successfully defeat 
+                    the opposing team's heroes in player versus player combat. A team wins by being the first to destroy 
+                    the other team's "Ancient", a large structure located within their base <br>
+
+                <span class="read-more-t">
+                    <br>Development of Dota 2 began in 2009 when IceFrog, lead designer of Defense of the Ancients, was
+                     hired by Valve to create a modernized remake for them in the Source game engine. It was released for
+                      Windows, OS X, and Linux via the digital distribution platform Steam in July 2013, following a 
+                      Windows-only open beta phase that began two years prior. The game is fully free-to-play with no
+                       heroes or any other gameplay element needing to be bought or otherwise unlocked. To maintain it,
+                        Valve supports the game as a service, selling loot boxes and a battle pass subscription system 
+                        called Dota Plus that offer non-gameplay altering virtual goods in return, such as hero cosmetics
+                         and audio replacement packs. The game was ported to the Source 2 engine in 2015, making it the 
+                         first game to use it.
+                </span>
+            </p>
+            <span class="read-more-b">Read More</span></center>
+        </div>
+        
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!--Picture-->
+    <center><div class="picture animeX" id="picture">
+        <h2>DOTA-2 Pictures</h2>
+        <div class="con">
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5" checked>
+        
+            <div class="cards">
+                <label for="s1" id="slide1">
+                    <div class="card">
+                        <center><div class="image">
+                            <img src="Picture/New/d1.jpg">
+                        </div></center>
+                    </div>
+                </label>
+        
+                <label for="s2" id="slide2">
+                    <div class="card">
+                        <center><div class="image">
+                            <img src="Picture/New/d2.jpg">
+                        </div></center>
+                    </div>
+                </label>
+                <label for="s3" id="slide3">
+                    <div class="card">
+                        <center><div class="image">
+                            <img src="Picture/New/d3.jpg">
+                        </div></center>
+                    </div>
+                </label>
+                <label for="s4" id="slide4">
+                    <div class="card">
+                        <center><div class="image">
+                            <img src="Picture/New/d4.jpg">
+                        </div></center>
+                    </div>
+                </label>
+                <label for="s5" id="slide5">
+                    <div class="card">
+                        <center><div class="image">
+                            <img src="Picture/New/d5.jpg">
+                        </div></center>
+                    </div>
+                </label>
+            </div>
+            </div>
+            </div></center>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <!--Gameplays-->
+    <div class="gameplaysg animeX" id="gameplay">
+        <h2>Gameplays</h2>
+        <div class="boxBx">
+            <div class="box">
+                <video class="video" src="Video/vid/dv1.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()">
+                </video>
+                <div class="content">
+                    <h4>Phantom Assassin 7.32 Patch Beast Mode - Dota 2 Pro Gameplay [Watch & Learn]</h4>
+                    <p>Miracle Techies 45 Frags | EPIC 2 Hours ► https://www.youtube.com/watch?v=jEelr...
+                        Miracle Super Carry Juggernaut ► https://youtu.be/I7P4CBJ-ths
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=XyRHMqoIylY&t=17s"  target="_blank" class="Watch">Watch</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/vid/dv2.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()">
+                </video>
+                <div class="content">
+                    <h4>Dreamocel Anti-Mage Super Carry - Dota 2 Pro Gameplay [Watch & Learn]</h4>
+                    <p>Top MMR Plays / Dota 2 Pro Gameplay is Educational Channel about e-sport Dota 2 competitive
+                        scene.
+                        Watch replays of professional players, highest...
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=B2KL7d9zMNM"  target="_blank" class="Watch">Watch</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <video class="video" src="Video/vid/dv3.mp4" loop muted onmouseover="this.play()" onmouseout="this.load()">
+                </video>
+                <div class="content">
+                    <h4>Dota 2 Safelane Tiny Carry vs Broodmother - Watch & Learn - victory in a game with 60 kills!</h4>
+                    <p>Hey guys, from now on you will see my face reacting randomly to video stuff so that we can avoid reused...
+                    </p>
+                    <div class="btn">
+                        <a href="https://www.youtube.com/watch?v=ejQfmvyT2r0"  target="_blank" class="Watch">Watch</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--Download-->
+    <div class="download animeX" id="download">
+        <form method="post">
+            <center><h1>Click Here To Download</h1>
+            <div class="inputBx">
+                <a href="installer.rar">DOWNLOAD NOW</a>
+            </div></center>
+        </form>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="info">
+            <img src="Picture/LOGO.png">
+            <p><i class='bx bx-copyright'></i>2022 All Reserved</p>
+            <ul>
+                <li><a href="https://www.facebook.com/dave.sarinas" target="_blank"><i class='bx bxl-facebook'></i></a>
+                </li>
+                <li><a href="https://www.instagram.com/avid2_8/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </li>
+                <li><a href="https://twitter.com/Dave_S28" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+<script src="script1.js"></script>
+</body>
+
+</html>

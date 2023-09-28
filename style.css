@@ -35,36 +35,6 @@ body{
     border-radius: 6px;
 }
 
-.go-top-btn {
-    position: fixed;
-    bottom: 35px;
-    right: 35px;
-    border-radius: 50%;
-    cursor: pointer;
-    height: 60px;
-    width: 60px;
-    border: 1px solid #00ffff;;
-    display: none;
-    background: none;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .go-top-btn i{
-    font-size: 30px;
-    color: white;
-  }
-
-  .go-top-btn i:hover{
-    color: #010f01;
-  }
-
-  .go-top-btn:hover{
-    background: #00ffff;
-    border: none;
-    box-shadow: 0 0 10px #00ffff;
-  }
-
 
 header{
     position: fixed;
@@ -203,8 +173,8 @@ header .action .searchBx input{
     align-items: center;
 }
 .about img{
-    height: 500px;
-    width: 500px;
+    height: 480px;
+    width: 850px;
     margin-left: 80px;
     
 }
@@ -375,8 +345,8 @@ header .action .searchBx input{
 
 }
 
-/* gameplays */
-.gameplays{
+/* trend */
+.trend{
     padding: 0px 100px;
     width: 100%;
     min-height: 100hv;
@@ -385,11 +355,12 @@ header .action .searchBx input{
     justify-content: center;
     align-items: center;
 }
-.gameplays h2{
+.trend h2{
     color: #fff;
     margin: 10px 0;
+    font-size: 50px;
 }
-.gameplays .boxBx{
+.trend .boxBx{
     width: 100%;
     min-height: 100%;
     display: flex;
@@ -397,70 +368,70 @@ header .action .searchBx input{
     justify-content: center;
     align-items: center;
 }
-.gameplays .boxBx .box{
+.trend .boxBx .box{
     width: 350px;
     border-radius: 10px;
     margin: 20px 40px;
-    background: #1b4121;
+    background: #1798b8;
     overflow: hidden;
-    box-shadow: 0 0 15px #1b4121;
+    box-shadow: 0 0 15px #1798b8;
 }
-.gameplays .boxBx .box video{
+.trend .boxBx .box video{
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-.gameplays .boxBx .box .content{
+.trend .boxBx .box .content{
     padding: 10px;
 }
-.gameplays .boxBx .box .content h4{
+.trend .boxBx .box .content h4{
     color: #fff;
     margin-top: 15px;
     text-decoration: underline;
 }
-.gameplays .boxBx .box .content p{
+.trend .boxBx .box .content p{
     text-align: justify;
     color: #dbd9d9;
     margin-top: 10px;
 }
-.gameplays .boxBx .box .content .btn{
+.trend .boxBx .box .content .btn{
     display: flex;
     justify-content: space-between;
 }
-.gameplays .boxBx .box .content .watch{
+.trend .boxBx .box .content .watch{
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
-    background: #1aef2c;
+    background: #00FFFF;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
     color: #010f01;
     letter-spacing: 1px;
-    box-shadow:  0 0 10px #1aef2c;
+    box-shadow:  0 0 10px #00ffff;
 }
-.gameplays .boxBx .box .content .watch:hover{
-    border: 1px solid #1aef2c;
+.trend .boxBx .box .content .watch:hover{
+    border: 1px solid #00ffff;
     background: none;
     color: #fff;
     box-shadow: none;
 }
-.gameplays .boxBx .box .content .Download{
+.trend .boxBx .box .content .Download{
     display: inline-block;
     padding: 10px 20px;
     margin: 20px 0;
-    border: 1px solid #1aef2c;
+    border: 1px solid #00ffff;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
     color: #fff;
     letter-spacing: 1px;
 }
-.gameplays .boxBx .box .content .Download:hover{
-    background: #1aef2c;
+.trend .boxBx .box .content .Download:hover{
+    background: #00ffff;
     border: none;
     color: #010f01;
-    box-shadow: 0 0 10px #1aef2c;
+    box-shadow: 0 0 10px #00ffff;
 }
 
 /* contact */
@@ -478,7 +449,7 @@ header .action .searchBx input{
     object-fit: cover;
     border-radius: 10px;
     filter:invert(1);
-    box-shadow: 0 0 5px #1b4121;
+    box-shadow: 0 0 5px #1798b8;
 }
 .contact form{
     width: 50%;
@@ -1214,10 +1185,10 @@ footer .info ul li:hover a i{
 
 
 /* picture of game */
-.picture{
+.music{
     margin-top: 2in;
 }
-.picture h2{
+.music h2{
     font-size: 3em;
     font-weight: 700;
     color: #fff;
@@ -1230,8 +1201,8 @@ footer .info ul li:hover a i{
 .con{
     width: 100%;
     height: 100%;
-    max-width: 600px;
-    max-height: 600px;
+    max-width: 900px;
+    max-height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1241,8 +1212,8 @@ footer .info ul li:hover a i{
 }
 .cards{
     position: relative;
-    height: 650px;
-    width: 530px;
+    height: 500px;
+    width: 900px;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
@@ -1257,8 +1228,8 @@ footer .info ul li:hover a i{
 .cards .card{
     position: relative;
     height: 100%;
-    background-color: #1b4121;
-    box-shadow: 0 0 10px #1b4121;
+    background-color: #1798b8;
+    box-shadow: 0 0 10px #1798b8;
     border-radius: 10px;
 }
 .cards .image{
@@ -1269,7 +1240,7 @@ footer .info ul li:hover a i{
     border-radius: 5px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 90%);
     margin: 15px;
-    width: 500px;
+    width: 900px;
     height: 330px;
     object-fit: cover;
     transition: all .7s;
